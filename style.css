@@ -54,6 +54,44 @@ a:hover {
   margin-top: 3rem;
 }
 
+
+.devices {
+  margin-top: 2rem;
+}
+
+.toggle-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #90caf9;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #64b5f6;
+}
+
+.device-list {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.device-list li {
+  background: #1e1e1e;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .social-links {
   display: flex;
   gap: 1.5rem;
