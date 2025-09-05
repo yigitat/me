@@ -99,16 +99,26 @@ a:hover {
 }
 
 .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: #1f1f1f;
   border-radius: 8px;
-  color: #db5f0c;
+  color: #90caf9;
   transition: background 0.3s;
 }
 
 .social-links a:hover {
   background-color: #333;
 }
+
+.social-links .icon {
+  width: 20px;
+  height: 20px;
+}
+
+
 
 .contact-form {
   display: flex;
