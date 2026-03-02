@@ -1,107 +1,174 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="icon.png">
-  <title>Yiğit Alp</title>
-  <meta name="google-site-verification" content="TKoB5tMRoSxwaWcT65giziNvMtQAZbqS5RuQgpDvIhM" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiğit Alp | Portfolyo</title>
+    <meta name="description" content="Kişisel projelerimi ve kullandığım ürünleri paylaştığım portfolyo sitem.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <h1 class="logo"><a class="yazi" href="https://yigitat.github.io/me/">Yiğit Alp</a></h1>
-    <ul class="nav-links">
-      <li><a href="projects.html">Projelerim</a></li>
-    </ul>
-  </nav>
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : '942431f2fec6b86810ad5b1057d184c0',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/942431f2fec6b86810ad5b1057d184c0/invoke.js"></script>
+    <nav class="navbar" id="navbar">
+        <div class="logo" id="logo">Yiğit Alp<span>.</span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" id="nav-about">Hakkımda</a></li>
+            <li><a href="#projects" id="nav-projects">Projeler</a></li>
+            <li><a href="#gear" id="nav-gear">Kullandığım Ürünler</a></li>
+        </ul>
+    </nav>
 
-	
-  <main class="content">
-    <section class="hero">
-      <h2>Merhaba, ben <span class="highlight">Yiğit Alp</span></h2>
-      <p>Teknolojiyle uğraşan, kendi projelerini geliştiren bir yazılım tutkunu bir genç.</p>
+    <header id="about" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Merhaba, Ben <span class="highlight">Yiğit Alp</span></h1>
+            <p>Burada projelerimi paylaşıyor, sevdiğim ve günlük hayatımda kullandığım donanım ve yazılım ürünlerini
+                listeliyorum. Yenilikleri keşfetmeyi ve üretmeyi seviyorum.</p>
+            <a href="#projects" class="btn btn-primary" id="btn-projects">Projelerimi Gör</a>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <h2 class="fade-in">Projelerim</h2>
+        <p class="section-subtitle fade-in" style="transition-delay: 0.1s">Geliştirdiğim güncel uygulamalar ve araçlar.
+        </p>
+        <div class="grid projects-grid">
+            <div class="card project-card fade-in" id="project-kda" style="transition-delay: 0.1s">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="KDA Hesaplayıcı">
+                </div>
+                <div class="card-content">
+                    <h3>KDA Hesaplayıcı</h3>
+                    <p>Oyuncular için gelişmiş bir KDA (Kill/Death/Assist) oran hesaplama ve performans analiz aracı.
+                        Modern dark tema ve dinamik sonuçlarla oyuncuların istatistiklerini anlamasını sağlar.</p>
+                    <a href="https://yigitat.github.io/kda-calculator/" class="btn btn-secondary" id="kda-link">Projeyi
+                        İncele</a>
+                </div>
+            </div>
+            <div class="card project-card fade-in" id="project-movie" style="transition-delay: 0.2s">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Film Arama Motoru">
+                </div>
+                <div class="card-content">
+                    <h3>Film Arama Motoru</h3>
+                    <p>OMDb API kullanarak geliştirilmiş, dinamik çalışan ve anlık sonuç veren film arama uygulaması.
+                        Tüm film verilerine tek platformda en hızlı erişim imkanı sunar.</p>
+                    <a href="https://yigitat.github.io/msengine/" class="btn btn-secondary" id="movie-link">Projeyi
+                        İncele</a>
+                </div>
+            </div>
+            <!-- More projects can be added here -->
+        </div>
     </section>
 
-    <section class="social-contact">
-      <h3>📞 Benimle İletişime Geç</h3>
+    <section id="gear" class="section">
+        <h2 class="fade-in">Kullandığım Ürünler</h2>
+        <p class="section-subtitle fade-in" style="transition-delay: 0.1s">Günlük iş akışımda verimliliğimi destekleyen
+            donanım ve araçlar.</p>
+        <div class="grid gear-grid">
+            <div class="card gear-card fade-in" id="gear-victus" style="transition-delay: 0.1s">
+                <div class="gear-icon"><i class="fa-solid fa-laptop"></i></div>
+                <h3>Hp Victus 15</h3>
+                <p>Ana geliştirme ortamım. İntel işlemcisinin sağladığı sessiz ve güçlü performans sayesinde iş
+                    akışım hiç kesintiye uğramıyor.</p>
+                <a href="https://www.hp.com/tr-tr/gaming-pc/laptops/2022-victus-15-intel.html" target="_blank"
+                    rel="noopener noreferrer" class="gear-link" id="link-victus">Ürünü İncele <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card gear-card fade-in" id="gear-enigma75" style="transition-delay: 0.2s">
+                <div class="gear-icon"><i class="fa-solid fa-keyboard"></i></div>
+                <h3>Rampage Enigma 75</h3>
+                <p>Mekanik klavye deneyimini kompakt ve şık bir tasarımla birleştiriyor. Kod yazarken hem hissiyatı hem
+                    de ergonomisi harika.</p>
+                <a href="https://www.rampage.com.tr/products/enigma-75-red-switch-mekanik-oyuncu-klavyesi?_pos=2&_psq=enigma&_ss=e&_v=1.0"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-enigma75">Ürünü İncele <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card gear-card fade-in" id="gear-zenithpro" style="transition-delay: 0.3s">
+                <div class="gear-icon"><i class="fa-solid fa-mouse"></i></div>
+                <h3>Rampage Zenith Pro</h3>
+                <p>Ergonomi ve fonksiyonelliğin buluştuğu mükemmel cihaz. Özel butonları ve kaydırma tekerleğiyle
+                    yazılım geliştirirken vazgeçilmezim.</p>
+                <a href="https://www.rampage.com.tr/products/zenith-pro-4000-hz-kablosuz-oyuncu-mouse?_pos=2&_psq=zenith+pro&_ss=e&_v=1.0"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-zenithpro">Ürünü İncele <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
 
-      <div class="social-links">
-        <a href="https://github.com/yigitat" target="_blank">💻 GitHub</a>
-        <a href="https://instagram.com/yigitat0" target="_blank">📸 İnstagram</a>
-        <a href="mailto:yigittasmaci@gmail.com" target="_blank">📨 Mail Gönder</a>
-      </div>
+            <!-- Kulaklık 1 -->
+            <div class="card gear-card fade-in" id="gear-headphone1" style="transition-delay: 0.4s">
+                <div class="gear-icon"><i class="fa-solid fa-headphones"></i></div>
+                <h3>Wraith Sense IEM Kulaklık</h3>
+                <p>Oyun seanslarımda ve toplantılarda ses kalitesiyle bana eşlik eden ana kulaklığım.</p>
+                <a href="https://wraithesports.com/products/wraith-sense-iem-kulaklik?variant=48699675607233"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-headphone1">Ürünü
+                    İncele <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Kulaklık 2 -->
+            <div class="card gear-card fade-in" id="gear-headphone2" style="transition-delay: 0.5s">
+                <div class="gear-icon"><i class="fa-solid fa-headphones-simple"></i></div>
+                <h3>Redmi Buds 6 Active</h3>
+                <p>Dışarıdayken veya spor yaparken müzik dinlemek için kullandığım pratik kablosuz kulaklığım.</p>
+                <a href="https://www.mi.com/tr/product/redmi-buds-6-active/" target="_blank" rel="noopener noreferrer"
+                    class="gear-link" id="link-headphone2">Ürünü
+                    İncele <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Kulaklık 3 -->
+            <div class="card gear-card fade-in" id="gear-headphone3" style="transition-delay: 0.6s">
+                <div class="gear-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                <h3>JBL Tune 720BT</h3>
+                <p>Müzik prodüksiyonu ve detaylı ses izolasyonu için tercih ettiğim üst düzey referans kulaklığım.</p>
+                <a href="https://www.hepsiburada.com/jbl-tune-720bt-wireless-kulaklik-ct-oe-beyaz-p-HBCV000066CL04"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-headphone3">Ürünü
+                    İncele <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Cep Telefonu -->
+            <div class="card gear-card fade-in" id="gear-phone" style="transition-delay: 0.7s">
+                <div class="gear-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h3>Xiaomi Redmi Note 12</h3>
+                <p>Günlük iletişimim, sosyal medya ve mobil testlerim için kullandığım ana cihazım.</p>
+                <a href="https://www.hepsiburada.com/xiaomi-redmi-note-12-128-gb-8-gb-ram-xiaomi-turkiye-garantili-gri-p-HBCV000050Y2IO?gad_campaignid=1635354910&gad_source=1&gclid=CjwKCAiAh5XNBhAAEiwA_Bu8FbpUMUCSugMTHj_6Yw5q1FTy6eoRsHk1BI0X3rephJrJUecFxdaLUxoC_90QAvD_BwE&utm_campaign=sc%3Ahb-ecom.sr%3Agoogle.md%3Adsa.op%3Apurchase.cid%3A1635354910&utm_content=agid%3A61403039734&utm_medium=cpc&utm_source=google&wt_gl=cpc.dsa.camp1635354910adgr61403039734"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-phone">Ürünü İncele <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Bilgisayar Standı -->
+            <div class="card gear-card fade-in" id="gear-stand" style="transition-delay: 0.8s">
+                <div class="gear-icon"><i class="fa-solid fa-desktop"></i></div>
+                <h3>Frisby Fnc-5175st</h3>
+                <p>Masaüstü ergonomimi artırmak ve ekranımı doğru hizaya getirmek için kullandığım alüminyum stand.</p>
+                <a href="https://www.trendyol.com/frisby/fnc-5175st-tasinabilir-katlanir-aluminyum-tablet-notebook-laptop-stand-p-955171902"
+                    target="_blank" rel="noopener noreferrer" class="gear-link" id="link-stand">Ürünü İncele <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Akıllı Saat -->
+            <div class="card gear-card fade-in" id="gear-watch" style="transition-delay: 0.9s">
+                <div class="gear-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>Redmi Watch 5 Active</h3>
+                <p>Aktivite takibimi ve bildirim yönetimimi sağladığım pratik akıllı saatim.</p>
+                <a href="https://www.mi.com/tr/product/redmi-watch-5-active/" target="_blank" rel="noopener noreferrer"
+                    class="gear-link" id="link-watch">Ürünü İncele <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
     </section>
 
-    <section class="about">
-      <h3>🧑 Hakkımda</h3>
-      <p>Yazılım geliştirmeyi seviyorum. Genel olrak şuanda HTML5, CSS3, JavaScript ile uğraşıyorum. Web projeleri, mobil uygulamalar ve teknolojik ürünlerle ilgileniyorum. Amacım geleceği teknolojiyle şekillendirmek.</p>
-    </section>
+    <footer id="footer">
+        <p>&copy; 2025 Yiğit Alp • Tüm hakları saklıdır.</p>
+    </footer>
 
-    <section class="devices">
-      <h3>⚙️ Kullandığım Cihazlar</h3>
-      <ul id="device-list" class="device-list">
-        <li>📱 Telefon - Xiaomi Redmi Note 12</li>
-        <li>💻 Bilgisayar - HP Victus 15 Gaming Laptop</li>
-        <li>⚙️ Bilgisayar Aksesuarları - 🖱️ Rampage Zenith Pro 4K Wireless - ⌨️ Rampage Enigma 75 Red Switch</li>
-        <li>🎧 Kulaklık(lar) - Wraith Sense IEM  ,JBL Tune 720BT, Xiaomi Redmi Buds 6 Active </li>
-        <li>⌚ Akıllı Saat - Xiaomi Redmi Watch 5 Active</li>
-      </ul>
-    </section>
-
-	        <div class="social-links">
-        <a href="https://yigitat.github.io/me/links.html" target="_blank">🌐 Kullandığım Ürünlerin Linkleri</a>
-      </div>
-
-  </main>
-
-<script type="text/javascript" align="center">
-	atOptions = {
-		'key' : 'c42a909f46441d5f0d384aeb9ded304e',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/c42a909f46441d5f0d384aeb9ded304e/invoke.js"></script>
-
-
-  
-  <footer>
-    <p>&copy; 2025 Yiğit Alp • Tüm hakları saklıdır</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
