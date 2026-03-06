@@ -1,8 +1,10 @@
 :root {
-    --bg-color: #080808; /* Deep black space */
+    --bg-color: #080808;
+    /* Deep black space */
     --text-color: #ffffff;
     --text-muted: #a1a1aa;
-    --primary: #ff6a00; /* Vibrant Orange */
+    --primary: #ff6a00;
+    /* Vibrant Orange */
     --primary-glow: rgba(255, 106, 0, 0.4);
     --secondary: #121212;
     --card-bg: rgba(20, 20, 20, 0.7);
@@ -38,6 +40,7 @@ html {
     pointer-events: none;
     opacity: 0.6;
 }
+
 .glow-1 {
     top: -15%;
     right: -10%;
@@ -45,6 +48,7 @@ html {
     height: 600px;
     background: radial-gradient(circle, var(--primary-glow) 0%, transparent 60%);
 }
+
 .glow-2 {
     bottom: -15%;
     left: -10%;
@@ -75,6 +79,7 @@ html {
     font-weight: 800;
     letter-spacing: 0.5px;
 }
+
 .logo span {
     color: var(--primary);
 }
@@ -100,7 +105,9 @@ html {
 }
 
 /* Typography & General Settings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
 }
 
@@ -214,7 +221,7 @@ h1, h2, h3 {
 }
 
 .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .gear-grid {
@@ -249,8 +256,11 @@ h1, h2, h3 {
 .card-image::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(20,20,20,1) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(20, 20, 20, 1) 100%);
     opacity: 0.4;
 }
 
@@ -362,20 +372,21 @@ footer {
     .nav-links {
         display: none;
     }
-    
+
     .hero h1 {
         font-size: 3.5rem;
     }
-    
+
     .section {
         padding: 5rem 5%;
     }
-    
+
     .section h2 {
         font-size: 2.5rem;
     }
-    
-    .projects-grid, .gear-grid {
+
+    .projects-grid,
+    .gear-grid {
         grid-template-columns: 1fr;
     }
 }
