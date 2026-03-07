@@ -148,6 +148,13 @@ h3 {
     margin-right: auto;
 }
 
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
